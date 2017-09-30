@@ -1,0 +1,13 @@
+{
+  "name": "bluecrest-petition",
+  "version": "1.0.0",
+  "description": "A website to run student petitions at Bluecrest College Edit",
+  "main": "server.js",
+  "repository": "https://github.com/rjforty/bluecrest-petition.git",
+  "author": "Raaj Ahiable",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1"
+  }
+}
