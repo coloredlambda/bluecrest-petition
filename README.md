@@ -1,5 +1,8 @@
 # bluecrest-petition
 
+## Project Details
+The project front-end is written in React.JS with the backend using node express framework with a mongoDB database
+
 ## Set up project
 Clone the project unto your computer and navigate to project directory
 To set up project you need node version 6 installed and an internet connection.
@@ -19,3 +22,6 @@ Open a seperate terminal window, navigate into the client folder and run
 > yarn start
 
 Wait patiently for server to start then you point your browser to *http://localhost:3000*
+
+
+NB. There is a secrets file to be able to access the project's real database. To get access to it, please contact me personally
