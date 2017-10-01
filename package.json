@@ -13,8 +13,7 @@
     "mongoose": "^4.11.14"
   },
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn --production=false && yarn run build"
+    "start": "node server.js"
   },
   "engines": {
     "node": "6.11.3"
