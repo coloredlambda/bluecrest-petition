@@ -9,7 +9,7 @@ const CommentBox = ({comments}) => {
                 return(
                     <Comment>
                         <Comment.Content>
-                            <Comment.Author>{comment.author}</Comment.Author>
+                            <Comment.Author>{comment.name}</Comment.Author>
                             <Comment.Text>
                                 {comment.text}
                             </Comment.Text>

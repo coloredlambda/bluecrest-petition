@@ -104,7 +104,7 @@ class App extends Component {
            </div>
 
            <div style={{textAlign : 'center'}} className='section'>
-               <CommentBox comments={comments}/>
+               <CommentBox comments={this.state.comments}/>
            </div>
        </Container>
 
