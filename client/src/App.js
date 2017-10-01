@@ -20,6 +20,15 @@ class App extends Component {
       this.state = { signatures : 0, comments : []}
   }
 
+  componentWillMount(){
+      axios.get('/getSignatures')
+          .then(response => {
+              this.setState({ signatures : response.data.length, comments : response.data})
+          })
+  }
+
+
+
   handlePetitionSign() {
       swal({
           title: 'Sign Petition',
@@ -82,18 +91,21 @@ class App extends Component {
 
        <Container className="App-intro">
 
-           <h2 style={{float : 'left'}}>Signatures : 300</h2>
-           <h2 style={{float : 'right'}}>Target : 500</h2>
+           <h2>Signatures : {this.state.signatures} of targeted 500</h2>
 
-           <ProgressBar signatures={300}/>
+           <ProgressBar signatures={this.state.signatures}/>
 
            <Petition/>
 
-           <Button primary size='large' onClick={() => this.handlePetitionSign()}>
-               Sign Petition
-           </Button>
+           <div className='section'>
+               <Button primary size='large' onClick={() => this.handlePetitionSign()}>
+                   Sign Petition
+               </Button>
+           </div>
 
-           <CommentBox comments={comments}/>
+           <div style={{textAlign : 'center'}} className='section'>
+               <CommentBox comments={comments}/>
+           </div>
        </Container>
 
       </div>
