@@ -63,7 +63,8 @@ class App extends Component {
                               })
                                   .then(res => {
                                       if(res.data){
-                                          swal('Successfully signed petition')
+                                          swal('Successfully signed petition');
+                                          this.componentWillMount();
                                       }else{
                                           swal('Failed to sign petition')
                                       }
