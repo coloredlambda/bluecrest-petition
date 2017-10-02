@@ -1,32 +1,17 @@
 import React from 'react';
-import { Menu, Container, Dropdown } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 
 const AppMenu = () =>
-    <Menu fixed='top' inverted>
-        <Container>
-            <Menu.Item as='a' header>
-                Project Name
-            </Menu.Item>
-            <Menu.Item as='a'>Home</Menu.Item>
+    <Menu fixed='top' size='large'>
+                <Menu.Item as='a' header>
+                    Echo
+                </Menu.Item>
 
-            <Dropdown item simple text='Dropdown'>
-                <Dropdown.Menu>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Divider />
-                    <Dropdown.Header>Header Item</Dropdown.Header>
-                    <Dropdown.Item>
-                        <i className='dropdown icon' />
-                        <span className='text'>Submenu</span>
-                        <Dropdown.Menu>
-                            <Dropdown.Item>List Item</Dropdown.Item>
-                            <Dropdown.Item>List Item</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-        </Container>
+                <Menu.Menu position='right'>
+                    <Menu.Item as='a'>Forum</Menu.Item>
+                    <Menu.Item as='a'>Blog</Menu.Item>
+                    <Menu.Item as='a'>About</Menu.Item>
+                </Menu.Menu>
     </Menu>;
 
 export default AppMenu;
