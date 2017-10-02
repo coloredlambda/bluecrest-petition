@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AppMenu from './Components/AppMenu'
 import Petition from './Components/Petition';
 import ProgressBar from './Components/ProgressBar';
 import swal from 'sweetalert';
@@ -84,6 +85,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+          <AppMenu/>
 
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />

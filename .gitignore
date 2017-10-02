@@ -1,3 +1,4 @@
 node_modules
 .idea
 client/node_modules
+secrets.js
