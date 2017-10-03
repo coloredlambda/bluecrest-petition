@@ -2,7 +2,7 @@ import React from 'react';
 import { Menu } from 'semantic-ui-react';
 
 const AppMenu = () =>
-    <Menu fixed='top' size='large'>
+    <Menu fixed='top' size='big' inverted>
                 <Menu.Item as='a' header>
                     Echo
                 </Menu.Item>
