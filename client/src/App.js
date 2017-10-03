@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppMenu from './Components/AppMenu';
-import Homepage from './Pages/Homepage'
+import AppRouter from './AppRouter';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
 
           <AppMenu/>
 
-          <Homepage/>
+          <AppRouter/>
 
       </div>
     );
