@@ -3,19 +3,28 @@
   "version": "1.0.0",
   "description": "A website to run student petitions at Bluecrest College Edit",
   "main": "server.js",
-  "repository": "https://github.com/rjforty/bluecrest-petition.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjforty/bluecrest-petition.git"
+  },
   "author": "Raaj Ahiable",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
     "moment": "^2.18.1",
-    "mongoose": "^4.11.14"
+    "mongoose": "^4.11.14",
+    "postcss-discard-comments": "link:/home/makali/Documents/Projects/Angular/bluecrest-petition/node_modules/postcss-discard-comments/"
   },
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
-    "node": "6.11.3"
-  }
+    "node": "8.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rjforty/bluecrest-petition/issues"
+  },
+  "homepage": "https://github.com/rjforty/bluecrest-petition#readme",
+  "devDependencies": {}
 }
