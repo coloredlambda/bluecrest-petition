@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 //Setting up connection to the database
-mongoose.connect(`mongodb://makali:makali@ds117935.mlab.com:17935/secrets`, {
+mongoose.connect(`mongodb://${secrets.username}:${secrets.password}@ds157444.mlab.com:57444/bluecrest-petition`, {
     useMongoClient : true
 });
 
